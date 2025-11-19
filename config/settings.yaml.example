@@ -1,0 +1,23 @@
+app:
+  name: "VM-Migrator"
+  # Ensure this path has at least 2x the disk space of your largest VM
+  staging_path: "/tmp/vm_migration_staging"
+
+vmware:
+  host: "vcenter.example.com"
+  port: 443
+  user: "admin@vsphere.local"
+  # Set to true in production environments with valid certificates
+  verify_ssl: false
+
+opennebula:
+  endpoint: "http://one-frontend.example.com:2633/RPC2"
+  # The ID of the datastore where images will be registered (check 'onedatastore list')
+  default_datastore_id: 101
+  image_driver: "qcow2"
+
+migration:
+  # Options: cold (shutdown required), warm (snapshot based - future feature)
+  mode: "cold"
+  cleanup_on_success: true
+  inject_drivers: true

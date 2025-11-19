@@ -1,0 +1,40 @@
+# --- Python Basics ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+.pytest_cache/
+
+# --- Secrets & Environment (CRITICAL) ---
+.env
+.env.local
+.env.production
+
+# --- Configuration ---
+# Ignore the actual settings as they contain hostnames/users
+config/settings.yaml
+# You should commit a template instead (e.g., settings.yaml.example)
+
+# --- Logs & Output ---
+*.log
+migration.log
+logs/
+
+# --- Large Data Files (Don't commit virtual disks!) ---
+*.vmdk
+*.qcow2
+*.ovf
+*.iso
+*.img
+
+# --- Staging Directory ---
+# If you accidentally create the staging folder inside the project
+staging/
+tmp/
+
+# --- IDEs & OS ---
+.vscode/
+.idea/
+.DS_Store

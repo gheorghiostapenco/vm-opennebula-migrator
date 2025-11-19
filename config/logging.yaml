@@ -1,0 +1,21 @@
+disable_existing_loggers: false
+formatters:
+  simple:
+    datefmt: '%H:%M:%S'
+    format: '%(asctime)s - %(levelname)s - %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: simple
+    level: INFO
+  file:
+    class: logging.handlers.RotatingFileHandler
+    filename: migration.log
+    formatter: simple
+    level: DEBUG
+root:
+  handlers:
+  - console
+  - file
+  level: INFO
+version: 1

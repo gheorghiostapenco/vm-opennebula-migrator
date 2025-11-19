@@ -1,0 +1,14 @@
+# Core Logic
+pyvmomi>=8.0.0.1.2      # VMware vSphere API
+pyone>=6.0.0            # OpenNebula XML-RPC API
+pyyaml>=6.0.1           # Config file parsing
+python-dotenv>=1.0.0    # Loading secrets from .env
+
+# Transport & Utils
+paramiko>=3.3.1         # SSH connections (future features)
+scp>=0.14.5             # SCP file transfer support
+
+# Development Tools
+pytest>=7.4.3           # Testing
+black>=23.11.0          # Formatting
+flake8>=6.1.0           # Linting
