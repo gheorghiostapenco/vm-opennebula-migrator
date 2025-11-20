@@ -70,9 +70,11 @@ Validate that all system tools and API connections are operational.
 
 ```bash
 python src/main.py check-env
+```
 
 2. List Available VMs
 Retrieve a list of VMs from the source vCenter to identify migration targets.
+
 ```bash
 python src/main.py list-vms --pattern "web-server"
 ```
