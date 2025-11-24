@@ -21,11 +21,6 @@ The pipeline follows a linear extract-transform-load (ETL) pattern:
 2.  **Transform:** Convert monolithic VMDK files to sparse QCOW2 images using `qemu-img`.
 3.  **Load:** Upload and register the new image artifacts into the OpenNebula datastore via the OCA API.
 
-
-
-[Image of data migration workflow diagram]
-
-
 ## Prerequisites
 
 * **Python 3.10+**
